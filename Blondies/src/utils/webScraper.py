@@ -87,7 +87,7 @@ def clean_ingredients(item_name):
 search_term = "brownies"
 brownie_recipe_links = search_all_recipes("brownies")
 
-brownie_recipe_links = brownie_recipe_links[0:2] # limit to 4 links for testing
+brownie_recipe_links = brownie_recipe_links[0:2] # limit number of links scraped for testing
 df = pd.DataFrame(columns=('recipe_name', 'recipe_categories', 'ingredient_name', 'quantity', 'measuring_unit', 'total_milliliters'))
 
 for link in brownie_recipe_links:
